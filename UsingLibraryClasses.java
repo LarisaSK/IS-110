@@ -11,7 +11,8 @@ public class UsingLibraryClasses
 {
     // instance variables - replace the example below with your own
     private String name;
-    private Random age;
+    private Random randomAge;
+    private int maxAge;
     private HashMap<String, String> responder;
     private HashSet <String> mySet;
 
@@ -21,10 +22,11 @@ public class UsingLibraryClasses
     public UsingLibraryClasses(String Name, int Age)
     {
         // initialise instance variables
-              age = new Random();
+              randomAge = new Random();
               name=Name;
+              maxAge=Age;
             responder = new HashMap<>();
-            mySet = new HashSet<>();
+            mySet = new HashSet<>(); 
     }
     
   
@@ -42,8 +44,8 @@ public class UsingLibraryClasses
      * and the entered age
      */
     public void changeAge(){
-    int 
-    int Age = age.nextInt(30);
+    int age = randomAge.nextInt(maxAge);
+    
     }
     
     /**
@@ -68,4 +70,3 @@ public class UsingLibraryClasses
     }
     }
 }
-
