@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+/**
+ * Write a description of class MyClass here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class MyClass
+{
+    // instance variables - replace the example below with your own
+  private ArrayList <String> records;
+ 
+
+    /**
+     * Constructor for objects of class MyClass
+     */
+    public MyClass()
+    {
+        // initialise instance variables
+       records =new ArrayList<>();
+     
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void remove()
+    {
+        Iterator <String> it = records.iterator();
+        while(it.hasNext()){
+        String t = it.next();
+        if(t.equals("Stine")){
+        it.remove();
+        }
+        
+        }
+        
+    }
+    public void addStudentName(String StudentName){
+    records.add(StudentName);
+    }
+public void listNames(){
+for(String StudentName: records){
+System.out.println(StudentName);
+}
+
+}
+}
+
