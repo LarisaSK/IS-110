@@ -13,6 +13,7 @@ public class UsingLibraryClasses
     private String name;
     private Random randomAge;
     private int maxAge;
+    private int age;
     private HashMap<String, String> responder;
     private HashSet <String> mySet;
 
@@ -44,7 +45,7 @@ public class UsingLibraryClasses
      * and the entered age
      */
     public void changeAge(){
-    int age = randomAge.nextInt(maxAge);
+    age = randomAge.nextInt(maxAge);
     
     }
     
@@ -70,3 +71,4 @@ public class UsingLibraryClasses
     }
     }
 }
+
