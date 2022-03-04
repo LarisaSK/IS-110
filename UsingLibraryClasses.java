@@ -52,16 +52,17 @@ public class UsingLibraryClasses
     /**
      * Using HashMap put method to create a pair object
      * @param writeHere your statement
-     */public void putInStatement(String writeHere){
+     */public void putInStatement(){
     responder.put("Hello","Hi. How can I help you!");
     }
     
     /**
      * @return the value of the key entered 
-     */public String getResponse(){
-    String response = responder.get("Hello");
+     */public String getResponse(String write){
+    String response = responder.get(write);
     return response;
     }
+    
     public void addSet (){
     mySet.add("Blue");
     mySet.add("Red");
